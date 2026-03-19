@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Mojang';
+  src: url('../assets/fonts/mojang/Mojang-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Mojang';
+  src: url('../assets/fonts/mojang/Mojang-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'VT323';
+  src: url('../assets/fonts/VT323/VT323-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(/assets/fonts/JetBrainsMono/fonts/ttf/JetBrainsMono-Regular.ttf);
+  font-weight: normal;
+}

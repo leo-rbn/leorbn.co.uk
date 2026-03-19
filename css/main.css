@@ -1,0 +1,71 @@
+.content h1 {
+    color: rgb(255, 0, 0);;
+    text-align: center;
+    padding-bottom:2%;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    position: relative;
+    background-color:#000000;
+    color: white;
+    height:100%
+}
+
+.content p, h2{
+    padding-left:5%;
+    padding-right:5%;
+    font-family: 'Ubuntu-Mono', monospace;
+}
+
+.content h2{
+    color:rgb(255, 0, 0);
+    font-family: VT323, monospace;
+}
+
+.projectBox
+{
+    padding-bottom: 30px;
+}
+
+.list{
+    padding-left:3%;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.infoBox{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.skills{
+    font-family: 'Ubuntu Mono', monospace;
+    color: rgba(255, 0, 0, 0.5);
+    padding-left:5%;
+    padding-right:5%;
+    font-weight: bold;
+}
+
+table{
+    align-items: center;
+    border-top: 2px solid white; /* Change color/thickness as needed */
+}
+
+.glossaryTable{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ th, tr, td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid white; /* Change color/thickness as needed */
+    border-left: 2px solid white; /* Change color/thickness as needed */
+    border-right: 2px solid white; /* Change color/thickness as needed */
+}
+
+    
