@@ -47,11 +47,11 @@
 }
 
 .sidebar ul li a {
-    font-size: 25px;
     color: white;
     text-decoration: none;
     width: 100%;
-    font-family: 'VT323', monospace;
+    font-family: 'Trebuchet MS', 'Verdana', sans-serif;
+
 }
 
 .sidebar ul li a:hover {
