@@ -40,10 +40,12 @@
 
 .sidebar ul {
     list-style-type: none;
+    padding-top:10%;
 }
 
 .sidebar ul li {
     margin: 15px 0;
+    padding-left: 10%;
 }
 
 .sidebar ul li a {
