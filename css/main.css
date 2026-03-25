@@ -91,12 +91,11 @@ table{
 }
 
 .langTable{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0 auto;
     padding:0%;
     border: none;
     border-top: none;
-    width: 100%;
+    width: 80%;
 }
 
 
