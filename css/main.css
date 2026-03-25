@@ -95,7 +95,7 @@ table{
     padding:0%;
     border: none;
     border-top: none;
-    max-width: 80%;
+    max-width: 100%vh;
 }
 
 
