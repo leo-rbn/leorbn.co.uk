@@ -39,7 +39,6 @@ body {
   color: var(--text);
   line-height: 1.6;
   transition: background 180ms ease, color 180ms ease;
-  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -91,39 +90,6 @@ img {
   animation: bounce 1.6s infinite;
 }
 
-.reveal-section {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 700ms ease, transform 700ms ease;
-}
-
-.reveal-section.is-visible,
-.reveal-section.in-view {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Additional section transition helpers for smoother continuity */
-.reveal-section {
-  will-change: opacity, transform;
-}
-
-/* Slight stagger for child cards when a section becomes visible */
-.reveal-section.is-visible .project-card,
-.reveal-section.is-visible .cert-card,
-.reveal-section.is-visible .timeline-item,
-.reveal-section.is-visible .language-pill,
-.reveal-section.is-visible .contact-form {
-  animation: card-rise 700ms ease both;
-}
-
-.reveal-section .project-card,
-.reveal-section .cert-card,
-.reveal-section .timeline-item,
-.reveal-section .language-pill,
-.reveal-section .contact-form {
-  animation: card-rise 700ms ease both;
-}
 
 .nav {
   display: flex;

@@ -51,7 +51,7 @@
 
     <main>
       
-      <section id="about-me" class="section container reveal-section">
+      <section id="about-me" class="section container">
         <div class="section-heading">
           <p class="eyebrow">About me</p>
           <h2>Programming Languages</h2>
@@ -97,7 +97,7 @@
           </article>
         </div>
 
-     <section id="timeline" class="section section-alt container reveal-section">
+     <section id="timeline" class="section section-alt container">
         <div class="section-heading">
           <h2>Experience</h2>
         </div>
@@ -116,7 +116,7 @@
       </section>
      
       
-        <section id="projects" class="section section-alt reveal-section">
+        <section id="projects" class="section section-alt">
           <div class="section-heading">
             <p class="eyebrow">Projects</p>
           </div>
@@ -134,7 +134,7 @@
           </div>
         </section>
 
-        <section id="contact" class="section section-alt reveal-section">
+        <section id="contact" class="section section-alt">
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Contact Me</p>
@@ -197,7 +197,6 @@
       const favicon = document.getElementById('site-favicon');
       const shortcutFavicon = document.getElementById('site-favicon-shortcut');
       const interactivePills = document.querySelectorAll('.language-pill[data-language], .language-pill[data-skill]');
-      const revealSections = document.querySelectorAll('.reveal-section');
       const projectSection = document.getElementById('projects');
       const projectCards = document.querySelectorAll('.project-card[data-languages], .project-card[data-skills]');
       const timelineItems = document.querySelectorAll('.timeline-item');
@@ -285,7 +284,7 @@
         });
 
         if (matches.length > 0 && projectSection) {
-          projectSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          projectSection.scrollIntoView({ block: 'start' });
         }
       }
 
@@ -321,29 +320,6 @@
           applyTheme(nextTheme);
         });
       }
-
-      function replayReveal(element) {
-        element.classList.remove('is-visible');
-        element.classList.remove('in-view');
-
-        window.requestAnimationFrame(() => {
-          element.classList.add('is-visible');
-          element.classList.add('in-view');
-        });
-      }
-
-      const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            replayReveal(entry.target);
-          } else {
-            entry.target.classList.remove('is-visible');
-            entry.target.classList.remove('in-view');
-          }
-        });
-      }, { threshold: 0.25 });
-
-      revealSections.forEach((section) => revealObserver.observe(section));
 
       const contactForm = document.getElementById('contact-form');
       const formStatus = document.getElementById('form-status');
