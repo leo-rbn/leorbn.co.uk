@@ -64,6 +64,14 @@ img {
   min-height: 100vh;
 }
 
+.page-header {
+  padding: 2rem 0 0;
+}
+
+.page-header-content {
+  padding: 2rem 0 3rem;
+}
+
 .scroll-indicator {
   position: fixed;
   right: 1.2rem;
@@ -558,6 +566,12 @@ textarea:focus {
   color: var(--text);
   background: var(--surface);
   transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.footer-link i,
+.theme-toggle-icon,
+.theme-toggle-label {
+  color: inherit;
 }
 
 .footer-link:hover {
